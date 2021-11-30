@@ -1,38 +1,170 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap');
+
+* {
+  margin: 0;
+  font-family: "Roboto";
+  color: #333;
+}
+
+body{
+  background-color: rgb(255, 252, 241);
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
+/* Navbar CSS */
+.navbar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  background-color: #006341;
+}
+
+.navbar h1 {
+  color: bisque;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color:bisque;
+}
+
+.navbar a:hover {
+  color: rgb(214, 192, 166);
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.logo h1{
+  float: left;
+}
+
+.material-icons {
+  color:bisque;
+  float: left;
+}
+
+/*Swiper CSS*/
+.swiperbar{
+  text-align: center;
+  height: 700
+}
+
+.swiperImg {
+  width: 100%;
+  max-height: 30em;
+  object-fit: cover;
+}
+
+/*Bodycontent CSS*/
+.bodycontent{
+  width: 60%;
+  margin: 2em auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bodycontent h3{
+  font-family: "Noto sans";
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.bodycontent button{
+  background: #006341;
+  color: bisque;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1em auto;
 }
 
-.App-link {
-  color: #61dafb;
+.bodycontent a{
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Footer CSS*/
+.footerspace{
+  width:100%;
+  background-color: darkgrey;
+  padding: 2em 0 1.5em 0;
+}
+
+.footer{
+  width:90%;
+  margin: auto;
+}
+
+.footer dt {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+}
+
+.footer dd a{
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+}
+
+/*About CSS*/
+.about{
+  width: 60%;
+  margin: 2em auto;
+  text-align: left;
+}
+
+.about h1, .about p{
+  font-family: "Noto sans";
+}
+
+.about p{
+  margin-bottom: 1em;
+}
+
+/*History CSS*/
+.history{
+  width: 60%;
+  margin: 2em auto;
+  text-align: left;
+}
+
+.history h1, .history p{
+  font-family: "Noto sans";
+}
+
+/*Notfound CSS*/
+.notfound {
+  width: 60%;
+  margin: 2em auto;
+  text-align: left;
+}
+
+.notfound h1, .notfound p, .notfound a{
+  font-family: "Noto sans";
+}
+
+.notfound a{
+  text-decoration: none;
 }
