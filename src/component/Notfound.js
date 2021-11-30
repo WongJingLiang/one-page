@@ -4,8 +4,11 @@ const Notfound = () => {
     return (  
         <div className="notfound">
             <h1>SORRY!</h1>
-            <p>That page cannot be found</p>
-            <Link to="/">Click here to go back to our homepage</Link>
+            
+            <Link to="/">
+                <p>That page cannot be found.</p>
+                Click here to go back to our homepage.
+            </Link>
         </div>
     );
 }
